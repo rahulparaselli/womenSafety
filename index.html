@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Safety Apps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #ff6f61, #ff3b3f);
+      color: white;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Grid System */
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* App Card Styles */
+    .app-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .app-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .app-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .app-card h2 {
+      margin: 15px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .app-card p {
+      margin: 0 15px 15px;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Button Container */
+    .button-container {
+      display: flex;
+      gap: 10px;
+      margin: 15px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #ff6f61, #ff3b3f);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn.ios {
+      background: linear-gradient(135deg, #007aff, #0047bb);
+    }
+
+    .btn.android {
+      background: linear-gradient(135deg, #3ddc84, #0f9d58);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .app-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 20px;
+      }
+
+      .button-container {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Women Safety Apps</h1>
+    <p>Empowering women with safety solutions</p>
+  </header>
+
+  <main>
+    <div class="app-grid">
+      <!-- Card 1 -->
+      <div class="app-card">
+        <img src="imgs/mysafetipin.jpg" alt="App">
+        <h2>My Safetipin</h2>
+        <p>Helps women find safe routes and areas using safety scores. Use it to share your location with trusted contacts in real-time.</p>
+        <div class="button-container">
+          <a href="https://apps.apple.com/in/app/my-safetipin-safety-companion/id1086977783" class="btn ios">iOS Link</a>
+          <a href="https://play.google.com/store/apps/details?id=com.safetipin.mysafetipin&hl=en_IN" class="btn android">Android Link</a>
+        </div>
+      </div>
+      
+        <!-- Card 2 -->
+        <div class="app-card">
+            <img src="imgs/basfe_9_11zon.png" alt="App ">
+            <h2>bSafe</h2>
+            <p> Offers SOS alerts, live GPS tracking, and automatic recording during emergencies. Use it to stay connected with your "Virtual Guardian."</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/us/app/bsafe-never-walk-alone/id459709106" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=com.bipper.app.bsafe&hl=EN" class="btn android">Android Link</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="app-card">
+            <img src="imgs/himmat-plus-logo_8_11zon.jpeg" alt="App ">
+            <h2>Himmat Plus</h2>
+            <p>Developed by Delhi Police, it sends SOS alerts directly to the police with your location and audio-video feed.</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/in/app/himmat-plus/id1337677961" class="btn ios">iOS Link</a>
+              <a href="#" class="btn android">Android Link</a>
+            </div>
+          </div>
+
+        <!-- Card 4 -->
+        <div class="app-card">
+            <img src="imgs/112India_7_11zon.png" alt="App ">
+            <h2>112 India</h2>
+            <p>A government app for emergencies, connecting you to police, fire, and ambulance services.</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/in/app/112-india/id1441951304" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=in.cdac.ners.psa.mobile.android.national&hl=en_IN" class="btn android">Android Link</a>
+            </div>
+          </div>
+
+        <!-- Card 5 -->
+        <div class="app-card">
+            <img src="imgs/8-raksha-women-safety-alert_6_11zon.jpeg" alt="App ">
+            <h2>Raksha</h2>
+            <p> Sends SOS alerts with GPS coordinates to emergency contacts. Locate nearby police stations and hospitals.</p>
+            <div class="button-container">
+              <a href="#" class="btn ios">iOS Link</a>
+              <a href="#" class="btn android">Android Link</a>
+            </div>
+          </div>
+        
+        <!-- Card 6 -->
+        <div class="app-card">
+            <img src="imgs/51P60PD79kL_5_11zon.png" alt="App ">
+            <h2>Shake2Safety</h2>
+            <p>Send SOS alerts by shaking your phone or pressing the power button four times. Works offline.</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/in/app/im-safe-women-safety-app/id6443935988" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.safetyhub&hl=en_IN" class="btn android">Android Link</a>
+            </div>
+          </div>
+        
+        <!-- Card 7 -->
+        <div class="app-card">
+            <img src="imgs/2-vithu_4_11zon.jpeg" alt="App ">
+            <h2>VithU</h2>
+            <p>Sends SOS alerts with location details by pressing the power button twice. Includes a "Fake Call" feature.</p>
+            <div class="button-container">
+              <a href="#" class="btn ios">iOS Link</a>
+              <a href="#" class="btn android">Android Link</a>
+            </div>
+          </div>
+        
+        <!-- Card 8 -->
+        <div class="app-card">
+            <img src="imgs/smart24x7_3_11zon.jpg" alt="App ">
+            <h2>Smart 24x7</h2>
+            <p>Provides instant access to police, hospitals, and fire services. Includes a panic button for emergencies.</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/in/app/smart24x7-personal-safety-app/id900457816" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=smart.emergencyservice&hl=en_IN" class="btn android">Android Link</a>
+            </div>
+          </div>
+
+        <!-- Card 9 -->
+        <div class="app-card">
+            <img src="imgs/Nirbhaya_2_11zon.jpg"App ">
+            <h2>Nirbhaya</h2>
+            <p>Sends SOS alerts to police and trusted contacts with real-time location tracking.</p>
+            <div class="button-container">
+              <a href="https://apps.apple.com/in/app/nirbhaya-ahmedabad-city-police/id6472571743" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=com.nirbhayaahmedabadcitypolice&hl=en_IN" class="btn android">Android Link</a>
+            </div>
+          </div>
+        
+        <!-- Card 10 -->
+        <div class="app-card">
+            <img src="imgs/1542368945og_image_1_11zon.jpeg" alt="App ">
+            <h2>Sheroes</h2>
+            <p>A women-only app with safety features like emergency helplines, legal advice, and community support.</p>
+            <div class="button-container">
+              <a href="#" class="btn ios">iOS Link</a>
+              <a href="https://play.google.com/store/apps/details?id=appliedlife.pvtltd.SHEROES&hl=en&_branch_match_id=1419002371996337315&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL84oKtbLTdWvcvVJ8ih28fILtq8rSk1LLSrKzEuPTyrKLy9OLbJ1zijKz00FADq%2BDNc0AAAA" class="btn android">Android Link</a>
+            </div>
+          </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Developed by Sunkari Likhitha (CSE - MVGRCE)</p>
+  </footer>
+</body>
+</html>
